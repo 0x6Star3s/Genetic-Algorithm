@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI</title>
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+
+<body>
+    <section>
+        <div class="menu">
+            <div class="menu-layout">
+                <div class="boxData">
+                    <p>TargetPoint</p>
+                    <label>x</label>
+                    <input type="number" id="xtargetinput" name="tentacles" value="900" step="10" min="50" max="700">
+                    <br />
+                    <label>y</label>
+                    <input type="number" id="ytargetinput" name="tentacles" value="100" step="10" min="10" max="100">
+                    <br />
+                    <label>size</label>
+                    <input type="number" id="sizetargetinput" name="tentacles" value="50" min="1" max="60">
+                </div>
+
+                <div class="boxData">
+                    <p>StartingPoint</p>
+                    <div class="value">
+                        <div class="menu-input">
+                            <label>x</label>
+                            <input type="number" id="xStartingPoint" name="tentacles" value="20" step="10" min="50" max="700">
+                        </div>
+                        <div class="menu-input">
+                            <label>y</label>
+                            <input type="number" id="yStartingPoint" name="tentacles" value="650" step="10" min="50" max="700">
+                        </div>
+                        <div class="menu-input">
+                            <label>size</label>
+                            <input type="number" id="sizeStartingPoint" name="tentacles" value="10" min="10" max="100">
+                        </div>
+                    </div>
+                </div>
+                <div class="boxData">
+                    <p>SmartCaps</p>
+                    <label>meny</label>
+                    <input type="number" id="popSize" name="tentacles" value="20" step="1" min="1" max="30">
+                    <br />
+                    <label>Auto</label>
+                    <input type="checkbox" id="auto" name="horns">
+                </div>
+                <div class="buttons">
+                    <button id="add">updata</button>
+                    <button id="relaunch">new game</button>
+                    <button id="nextGen">next Gen</button>
+                </div>
+                <div id="genData" class="genData"></div>
+            </div>
+        </div>
+        <div class="board">
+            <canvas id="canvas" tabindex=0 width="980" height="680"></canvas>
+        </div>
+    </section>
+
+    <script src="mocorgo.js"></script>
+    <script src="SmartCaps.js"></script>
+    <script src="SmartCapsPop.js"></script>
+    <script src="userInput.js"></script>
+    <script src="game_template.js"></script>
+</body>
+
+</html>
